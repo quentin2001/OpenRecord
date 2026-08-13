@@ -94,6 +94,7 @@ function findRedistCopies() {
 	return found;
 }
 
+const candidates = findRedistCopies();
 if (candidates.length === 0) {
 	const system32Copy = "C:\\Windows\\System32\\vcomp140.dll";
 	if (fs.existsSync(system32Copy)) {
